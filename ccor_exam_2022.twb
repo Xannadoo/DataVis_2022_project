@@ -1,0 +1,2122 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Heatmap />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='wed_sum' inline='true' name='federated.16aimfk0u1soys0zubpne1b5k0g9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='wed_sum' name='textscan.11kpok319j95ro17h45oa0p76nfb'>
+            <connection class='textscan' directory='C:/Users/Chrisanna Cornish/OneDrive/Desktop/DataScienceBSc/Semester 4/Data_Vis/Data_Vis_Project/DataVis_2022_project' filename='wed_sum.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.11kpok319j95ro17h45oa0p76nfb' name='wed_sum.csv' table='[wed_sum#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='deep' ordinal='0' />
+            <column datatype='integer' name='wake' ordinal='1' />
+            <column datatype='integer' name='light' ordinal='2' />
+            <column datatype='integer' name='rem' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.11kpok319j95ro17h45oa0p76nfb' name='wed_sum.csv' table='[wed_sum#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='deep' ordinal='0' />
+            <column datatype='integer' name='wake' ordinal='1' />
+            <column datatype='integer' name='light' ordinal='2' />
+            <column datatype='integer' name='rem' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[wed_sum.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deep</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deep]</local-name>
+            <parent-name>[wed_sum.csv]</parent-name>
+            <remote-alias>deep</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wed_sum.csv_D1C7AB2B457A47A18C20C140A10D0CE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wake</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wake]</local-name>
+            <parent-name>[wed_sum.csv]</parent-name>
+            <remote-alias>wake</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wed_sum.csv_D1C7AB2B457A47A18C20C140A10D0CE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>light</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[light]</local-name>
+            <parent-name>[wed_sum.csv]</parent-name>
+            <remote-alias>light</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wed_sum.csv_D1C7AB2B457A47A18C20C140A10D0CE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rem</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rem]</local-name>
+            <parent-name>[wed_sum.csv]</parent-name>
+            <remote-alias>rem</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wed_sum.csv_D1C7AB2B457A47A18C20C140A10D0CE1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='wed_sum.csv' datatype='table' name='[__tableau_internal_object_id__].[wed_sum.csv_D1C7AB2B457A47A18C20C140A10D0CE1]' role='measure' type='quantitative' />
+      <column caption='Deep' datatype='integer' name='[deep]' role='measure' type='quantitative' />
+      <column caption='Light' datatype='integer' name='[light]' role='measure' type='quantitative' />
+      <column caption='Rem' datatype='integer' name='[rem]' role='measure' type='quantitative' />
+      <column caption='Wake' datatype='integer' name='[wake]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Denmark&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='wed_sum.csv' id='wed_sum.csv_D1C7AB2B457A47A18C20C140A10D0CE1'>
+            <properties context=''>
+              <relation connection='textscan.11kpok319j95ro17h45oa0p76nfb' name='wed_sum.csv' table='[wed_sum#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='deep' ordinal='0' />
+                  <column datatype='integer' name='wake' ordinal='1' />
+                  <column datatype='integer' name='light' ordinal='2' />
+                  <column datatype='integer' name='rem' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='wed_sleep' inline='true' name='federated.13uahaz0cegkjf10kvibs1n3jtnl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='wed_sleep' name='textscan.0b9dxl50kwmy82155aqwe15kejib'>
+            <connection class='textscan' directory='C:/Users/Chrisanna Cornish/OneDrive/Desktop/DataScienceBSc/Semester 4/Data_Vis/Data_Vis_Project/DataVis_2022_project' filename='wed_sleep.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0b9dxl50kwmy82155aqwe15kejib' name='wed_sleep.csv' table='[wed_sleep#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='datetime' name='dateTime' ordinal='0' />
+            <column datatype='string' name='level' ordinal='1' />
+            <column datatype='integer' name='seconds' ordinal='2' />
+            <column datatype='integer' name='num' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0b9dxl50kwmy82155aqwe15kejib' name='wed_sleep.csv' table='[wed_sleep#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='datetime' name='dateTime' ordinal='0' />
+            <column datatype='string' name='level' ordinal='1' />
+            <column datatype='integer' name='seconds' ordinal='2' />
+            <column datatype='integer' name='num' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[wed_sleep.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dateTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[dateTime]</local-name>
+            <parent-name>[wed_sleep.csv]</parent-name>
+            <remote-alias>dateTime</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wed_sleep.csv_5E97D7519813478E946C453D8B278F67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[level]</local-name>
+            <parent-name>[wed_sleep.csv]</parent-name>
+            <remote-alias>level</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wed_sleep.csv_5E97D7519813478E946C453D8B278F67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seconds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[seconds]</local-name>
+            <parent-name>[wed_sleep.csv]</parent-name>
+            <remote-alias>seconds</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wed_sleep.csv_5E97D7519813478E946C453D8B278F67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num]</local-name>
+            <parent-name>[wed_sleep.csv]</parent-name>
+            <remote-alias>num</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[wed_sleep.csv_5E97D7519813478E946C453D8B278F67]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='time' datatype='datetime' default-format='*nn:ss' name='[Calculation_359725057661140992]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKETIME(0,0,[seconds])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='wed_sleep.csv' datatype='table' name='[__tableau_internal_object_id__].[wed_sleep.csv_5E97D7519813478E946C453D8B278F67]' role='measure' type='quantitative' />
+      <column caption='Date Time' datatype='datetime' name='[dateTime]' role='dimension' type='ordinal' />
+      <column caption='Level' datatype='string' name='[level]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[num]' role='measure' type='quantitative' />
+      <column caption='Seconds' datatype='integer' name='[seconds]' role='measure' type='quantitative' />
+      <column-instance column='[level]' derivation='Attribute' name='[attr:level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[level]' derivation='None' name='[none:level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[num]' derivation='Sum' name='[sum:num:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[attr:level:nk]' type='palette'>
+            <map to='#154ba6'>
+              <bucket>&quot;deep&quot;</bucket>
+            </map>
+            <map to='#3f8dff'>
+              <bucket>&quot;light&quot;</bucket>
+            </map>
+            <map to='#7ec4ff'>
+              <bucket>&quot;rem&quot;</bucket>
+            </map>
+            <map to='#e73360'>
+              <bucket>&quot;wake&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:level:nk]' type='palette'>
+            <map to='#154ba6'>
+              <bucket>&quot;deep&quot;</bucket>
+            </map>
+            <map to='#3f8dff'>
+              <bucket>&quot;light&quot;</bucket>
+            </map>
+            <map to='#7ec4ff'>
+              <bucket>&quot;rem&quot;</bucket>
+            </map>
+            <map to='#e73360'>
+              <bucket>&quot;wake&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:num:ok]' type='palette'>
+            <map to='#154ba6'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#3f8dff'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#7ec4ff'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#e73360'>
+              <bucket>3</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Denmark&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='wed_sleep.csv' id='wed_sleep.csv_5E97D7519813478E946C453D8B278F67'>
+            <properties context=''>
+              <relation connection='textscan.0b9dxl50kwmy82155aqwe15kejib' name='wed_sleep.csv' table='[wed_sleep#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='datetime' name='dateTime' ordinal='0' />
+                  <column datatype='string' name='level' ordinal='1' />
+                  <column datatype='integer' name='seconds' ordinal='2' />
+                  <column datatype='integer' name='num' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='prepped_data' inline='true' name='federated.1r5qa1g0v1m78x16bkwcn1l16mqm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='prepped_data' name='textscan.0tkyfcv130r2a610qsm190yz9a02'>
+            <connection class='textscan' directory='C:/Users/Chrisanna Cornish/OneDrive/Desktop/DataScienceBSc/Semester 4/Data_Vis/Data_Vis_Project/DataVis_2022_project' filename='prepped_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0tkyfcv130r2a610qsm190yz9a02' name='prepped_data.csv' table='[prepped_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='overall_score' ordinal='1' />
+            <column datatype='integer' name='composition_score' ordinal='2' />
+            <column datatype='integer' name='revitalization_score' ordinal='3' />
+            <column datatype='integer' name='duration_score' ordinal='4' />
+            <column datatype='integer' name='deep_sleep_in_minutes' ordinal='5' />
+            <column datatype='integer' name='resting_heart_rate' ordinal='6' />
+            <column datatype='real' name='restlessness' ordinal='7' />
+            <column datatype='datetime' name='wake_times' ordinal='8' />
+            <column datatype='real' name='minutesAsleep' ordinal='9' />
+            <column datatype='integer' name='deep' ordinal='10' />
+            <column datatype='integer' name='light' ordinal='11' />
+            <column datatype='integer' name='rem' ordinal='12' />
+            <column datatype='integer' name='wake' ordinal='13' />
+            <column datatype='datetime' name='in_bed_time' ordinal='14' />
+            <column datatype='real' name='in_bed_hour' ordinal='15' />
+            <column datatype='datetime' name='wake_time' ordinal='16' />
+            <column datatype='real' name='wake_hour' ordinal='17' />
+            <column datatype='real' name='in_bed_time (mins)' ordinal='18' />
+            <column datatype='integer' name='period' ordinal='19' />
+            <column datatype='string' name='dayOfWeek' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0tkyfcv130r2a610qsm190yz9a02' name='prepped_data.csv' table='[prepped_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='overall_score' ordinal='1' />
+            <column datatype='integer' name='composition_score' ordinal='2' />
+            <column datatype='integer' name='revitalization_score' ordinal='3' />
+            <column datatype='integer' name='duration_score' ordinal='4' />
+            <column datatype='integer' name='deep_sleep_in_minutes' ordinal='5' />
+            <column datatype='integer' name='resting_heart_rate' ordinal='6' />
+            <column datatype='real' name='restlessness' ordinal='7' />
+            <column datatype='datetime' name='wake_times' ordinal='8' />
+            <column datatype='real' name='minutesAsleep' ordinal='9' />
+            <column datatype='integer' name='deep' ordinal='10' />
+            <column datatype='integer' name='light' ordinal='11' />
+            <column datatype='integer' name='rem' ordinal='12' />
+            <column datatype='integer' name='wake' ordinal='13' />
+            <column datatype='datetime' name='in_bed_time' ordinal='14' />
+            <column datatype='real' name='in_bed_hour' ordinal='15' />
+            <column datatype='datetime' name='wake_time' ordinal='16' />
+            <column datatype='real' name='wake_hour' ordinal='17' />
+            <column datatype='real' name='in_bed_time (mins)' ordinal='18' />
+            <column datatype='integer' name='period' ordinal='19' />
+            <column datatype='string' name='dayOfWeek' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overall_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[overall_score]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>overall_score</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>composition_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[composition_score]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>composition_score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revitalization_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revitalization_score]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>revitalization_score</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[duration_score]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>duration_score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deep_sleep_in_minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deep_sleep_in_minutes]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>deep_sleep_in_minutes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resting_heart_rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[resting_heart_rate]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>resting_heart_rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>restlessness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[restlessness]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>restlessness</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wake_times</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[wake_times]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>wake_times</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutesAsleep</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minutesAsleep]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>minutesAsleep</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deep</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[deep]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>deep</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>light</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[light]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>light</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rem</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rem]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>rem</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wake</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wake]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>wake</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_bed_time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[in_bed_time]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>in_bed_time</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_bed_hour</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[in_bed_hour]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>in_bed_hour</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wake_time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[wake_time]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>wake_time</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wake_hour</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wake_hour]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>wake_hour</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>in_bed_time (mins)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[in_bed_time (mins)]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>in_bed_time (mins)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>period</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[period]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>period</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dayOfWeek</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dayOfWeek]</local-name>
+            <parent-name>[prepped_data.csv]</parent-name>
+            <remote-alias>dayOfWeek</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Hours' datatype='real' name='[Calculation_249105391492558848]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[minutesAsleep]/60' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='prepped_data.csv' datatype='table' name='[__tableau_internal_object_id__].[prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Day Of Week' datatype='string' name='[dayOfWeek]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Friday&quot;' value='Fri' />
+          <alias key='&quot;Monday&quot;' value='Mon' />
+          <alias key='&quot;Saturday&quot;' value='Sat' />
+          <alias key='&quot;Sunday&quot;' value='Sun' />
+          <alias key='&quot;Thursday&quot;' value='Thu' />
+          <alias key='&quot;Tuesday&quot;' value='Tue' />
+          <alias key='&quot;Wednesday&quot;' value='Wed' />
+        </aliases>
+      </column>
+      <column caption='Deep' datatype='integer' name='[deep]' role='measure' type='quantitative' />
+      <column datatype='real' name='[in_bed_hour]' role='measure' type='quantitative' />
+      <column caption='In Bed Time (Mins)' datatype='real' name='[in_bed_time (mins)]' role='dimension' type='quantitative' />
+      <column datatype='datetime' name='[in_bed_time]' role='dimension' type='ordinal' />
+      <column caption='Light' datatype='integer' name='[light]' role='measure' type='quantitative' />
+      <column caption='Minutes Asleep' datatype='real' name='[minutesAsleep]' role='measure' type='quantitative' />
+      <column caption='Period' datatype='integer' name='[period]' role='measure' type='quantitative' />
+      <column caption='Rem' datatype='integer' name='[rem]' role='measure' type='quantitative' />
+      <column caption='Wake' datatype='integer' name='[wake]' role='measure' type='quantitative' />
+      <column caption='Wake Hour' datatype='real' name='[wake_hour]' role='measure' type='quantitative' />
+      <column caption='Wake Time' datatype='datetime' default-format='*hh:mm:' name='[wake_time]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' datatype='datetime' name='[wake_times]' role='dimension' type='ordinal' />
+      <column-instance column='[minutesAsleep]' derivation='Attribute' name='[attr:minutesAsleep:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_249105391492558848]' derivation='Avg' name='[avg:Calculation_249105391492558848:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[in_bed_time (mins)]' derivation='Avg' name='[avg:in_bed_time (mins):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[minutesAsleep]' derivation='Avg' name='[avg:minutesAsleep:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[date]' derivation='Day' name='[dy:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[in_bed_time]' derivation='Hour' name='[hr:in_bed_time:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[in_bed_time]' derivation='Minute' name='[mi:in_bed_time:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[dayOfWeek]' derivation='None' name='[none:dayOfWeek:nk]' pivot='key' type='nominal' />
+      <column-instance column='[in_bed_hour]' derivation='None' name='[none:in_bed_hour:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[minutesAsleep]' derivation='None' name='[none:minutesAsleep:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_249105391492558848]' derivation='Sum' name='[sum:Calculation_249105391492558848:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[in_bed_time (mins)]' derivation='Sum' name='[sum:in_bed_time (mins):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[minutesAsleep]' derivation='Sum' name='[sum:minutesAsleep:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[period]' derivation='Sum' name='[sum:period:ok]' pivot='key' type='ordinal' />
+      <group hidden='true' name='[Exclusions (Day Of Week,in_bed_hour)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:dayOfWeek:nk]' />
+          <groupfilter function='level-members' level='[none:in_bed_hour:qk]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (HOUR(in_bed_time),MINUTE(in_bed_time))]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[hr:in_bed_time:ok]' />
+          <groupfilter function='level-members' level='[mi:in_bed_time:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[sum:in_bed_time (mins):qk]&quot;</bucket>
+            </map>
+            <map to='#5c6068'>
+              <bucket>&quot;[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:Calculation_249105391492558848:qk]&quot;</bucket>
+            </map>
+            <map to='#5c6068'>
+              <bucket>&quot;[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]&quot;</bucket>
+            </map>
+            <map to='#5c6068'>
+              <bucket>&quot;[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[sum:Calculation_249105391492558848:qk]&quot;</bucket>
+            </map>
+            <map to='#d3d3d3'>
+              <bucket>&quot;[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:in_bed_time (mins):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[attr:minutesAsleep:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:minutesAsleep:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[sum:minutesAsleep:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:period:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>8</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[dy:date:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>24</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Denmark&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='prepped_data.csv' id='prepped_data.csv_3A132FCED92344AEAECF12CAC635AA0B'>
+            <properties context=''>
+              <relation connection='textscan.0tkyfcv130r2a610qsm190yz9a02' name='prepped_data.csv' table='[prepped_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='integer' name='overall_score' ordinal='1' />
+                  <column datatype='integer' name='composition_score' ordinal='2' />
+                  <column datatype='integer' name='revitalization_score' ordinal='3' />
+                  <column datatype='integer' name='duration_score' ordinal='4' />
+                  <column datatype='integer' name='deep_sleep_in_minutes' ordinal='5' />
+                  <column datatype='integer' name='resting_heart_rate' ordinal='6' />
+                  <column datatype='real' name='restlessness' ordinal='7' />
+                  <column datatype='datetime' name='wake_times' ordinal='8' />
+                  <column datatype='real' name='minutesAsleep' ordinal='9' />
+                  <column datatype='integer' name='deep' ordinal='10' />
+                  <column datatype='integer' name='light' ordinal='11' />
+                  <column datatype='integer' name='rem' ordinal='12' />
+                  <column datatype='integer' name='wake' ordinal='13' />
+                  <column datatype='datetime' name='in_bed_time' ordinal='14' />
+                  <column datatype='real' name='in_bed_hour' ordinal='15' />
+                  <column datatype='datetime' name='wake_time' ordinal='16' />
+                  <column datatype='real' name='wake_hour' ordinal='17' />
+                  <column datatype='real' name='in_bed_time (mins)' ordinal='18' />
+                  <column datatype='integer' name='period' ordinal='19' />
+                  <column datatype='string' name='dayOfWeek' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Asleep by Day'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='prepped_data' name='federated.1r5qa1g0v1m78x16bkwcn1l16mqm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5qa1g0v1m78x16bkwcn1l16mqm'>
+            <column-instance column='[minutesAsleep]' derivation='Avg' name='[avg:minutesAsleep:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Day Of Week' datatype='string' name='[dayOfWeek]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Friday&quot;' value='Fri' />
+                <alias key='&quot;Monday&quot;' value='Mon' />
+                <alias key='&quot;Saturday&quot;' value='Sat' />
+                <alias key='&quot;Sunday&quot;' value='Sun' />
+                <alias key='&quot;Thursday&quot;' value='Thu' />
+                <alias key='&quot;Tuesday&quot;' value='Tue' />
+                <alias key='&quot;Wednesday&quot;' value='Wed' />
+              </aliases>
+            </column>
+            <column caption='Minutes Asleep' datatype='real' name='[minutesAsleep]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dayOfWeek]' derivation='None' name='[none:dayOfWeek:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:date:qk]' filter-group='4' included-values='in-range'>
+            <min>#2020-05-31#</min>
+            <max>#2020-10-06#</max>
+          </filter>
+          <slices>
+            <column>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' field-type='quantitative' major-origin='0.0' major-spacing='60.0' minor-origin='0.0' minor-show='false' minor-spacing='10.0' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' scope='rows' value='Minutes asleep' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='width' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' value='64' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:dayOfWeek:nk]' value='false' />
+            <format attr='text-format' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' max='520.0' min='300.0' num-steps='7' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#d5d5d5</color>
+                <color>#bbb9c6</color>
+                <color>#a3a0b7</color>
+                <color>#8d88a8</color>
+                <color>#78729a</color>
+                <color>#655f8b</color>
+                <color>#534d7c</color>
+                <color>#443d6e</color>
+                <color>#352e5f</color>
+                <color>#292250</color>
+                <color>#1e1842</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9450275897979736' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]</rows>
+        <cols>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:dayOfWeek:nk]</cols>
+      </table>
+      <simple-id uuid='{B87BDB8D-9EFE-455E-AC03-7A5C144C14EC}' />
+    </worksheet>
+    <worksheet name='Asleep by wake hour'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='prepped_data' name='federated.1r5qa1g0v1m78x16bkwcn1l16mqm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5qa1g0v1m78x16bkwcn1l16mqm'>
+            <column-instance column='[minutesAsleep]' derivation='Avg' name='[avg:minutesAsleep:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Minutes Asleep' datatype='real' name='[minutesAsleep]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[wake_hour]' derivation='None' name='[none:wake_hour:qk]' pivot='key' type='quantitative' />
+            <column caption='Wake Hour' datatype='real' name='[wake_hour]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:date:qk]' filter-group='4' included-values='in-range'>
+            <min>#2020-05-31#</min>
+            <max>#2020-10-06#</max>
+          </filter>
+          <slices>
+            <column>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:wake_hour:qk]' field-type='quantitative' major-origin='0.0' major-spacing='1.0' max='11.0' min='5.0' minor-origin='0.0' minor-show='false' minor-spacing='0.10000000000000001' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:wake_hour:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' field-type='quantitative' major-origin='0.0' major-spacing='60.0' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' scope='cols' value='true' />
+            <format attr='title' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' scope='cols' value='Minutes' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' max='520.0' min='300.0' num-steps='7' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#d5d5d5</color>
+                <color>#bbb9c6</color>
+                <color>#a3a0b7</color>
+                <color>#8d88a8</color>
+                <color>#78729a</color>
+                <color>#655f8b</color>
+                <color>#534d7c</color>
+                <color>#443d6e</color>
+                <color>#352e5f</color>
+                <color>#292250</color>
+                <color>#1e1842</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='0.97999999999999998' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='true' />
+            <encodings>
+              <color column='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:wake_hour:qk]</rows>
+        <cols>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]</cols>
+      </table>
+      <simple-id uuid='{F032A2B1-3097-469F-BF6D-26C19ADF5115}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wed_sleep' name='federated.13uahaz0cegkjf10kvibs1n3jtnl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13uahaz0cegkjf10kvibs1n3jtnl'>
+            <column caption='Date Time' datatype='datetime' name='[dateTime]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[num]' role='measure' type='quantitative' />
+            <column-instance column='[num]' derivation='Sum' name='[sum:num:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[num]' derivation='Sum' name='[sum:num:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dateTime]' derivation='Second-Trunc' name='[tsc:dateTime:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13uahaz0cegkjf10kvibs1n3jtnl].[tsc:dateTime:qk]' field-type='quantitative' major-origin='#00:00:00#' major-spacing='1.0' major-units='hours' max='#2022-05-11 07:30:00#' min='#2022-05-11 00:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.13uahaz0cegkjf10kvibs1n3jtnl].[tsc:dateTime:qk]' scope='cols' value='true' />
+            <format attr='title' class='0' field='[federated.13uahaz0cegkjf10kvibs1n3jtnl].[tsc:dateTime:qk]' scope='cols' value='Time' />
+            <encoding attr='space' class='0' field='[federated.13uahaz0cegkjf10kvibs1n3jtnl].[sum:num:qk]' field-type='quantitative' major-origin='0' major-spacing='1' max='4' min='-1' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.13uahaz0cegkjf10kvibs1n3jtnl].[sum:num:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='2' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13uahaz0cegkjf10kvibs1n3jtnl].[sum:num:qk]</rows>
+        <cols>[federated.13uahaz0cegkjf10kvibs1n3jtnl].[tsc:dateTime:qk]</cols>
+      </table>
+      <simple-id uuid='{C0DC696C-8013-47B7-ACAC-D9F2A4B2A417}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='prepped_data' name='federated.1r5qa1g0v1m78x16bkwcn1l16mqm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5qa1g0v1m78x16bkwcn1l16mqm'>
+            <column-instance column='[minutesAsleep]' derivation='Avg' name='[avg:minutesAsleep:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[resting_heart_rate]' derivation='Avg' name='[avg:resting_heart_rate:qk]' pivot='key' type='quantitative' />
+            <column caption='Minutes Asleep' datatype='real' name='[minutesAsleep]' role='measure' type='quantitative' />
+            <column-instance column='[overall_score]' derivation='None' name='[none:overall_score:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[overall_score]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[resting_heart_rate]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:resting_heart_rate:qk]' field-type='quantitative' max='75.0' min='65.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:overall_score:qk]' />
+            </encodings>
+            <trendline degree='2' enable-confidence-bands='true' enable-instant-analytics='false' enabled='true' exclude-color='true' exclude-intercept='false' fit='polynomial' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.263370156288147' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1044' />
+                <format attr='maxwidth' value='1044' />
+                <format attr='minheight' value='640' />
+                <format attr='maxheight' value='640' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1044' />
+                <format attr='maxwidth' value='1044' />
+                <format attr='minheight' value='640' />
+                <format attr='maxheight' value='640' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1044' />
+                <format attr='maxwidth' value='1044' />
+                <format attr='minheight' value='640' />
+                <format attr='maxheight' value='640' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1044' />
+                <format attr='maxwidth' value='1044' />
+                <format attr='minheight' value='640' />
+                <format attr='maxheight' value='640' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1044' />
+                <format attr='maxwidth' value='1044' />
+                <format attr='minheight' value='640' />
+                <format attr='maxheight' value='640' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:resting_heart_rate:qk]</rows>
+        <cols>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]</cols>
+      </table>
+      <simple-id uuid='{580D9CE7-F1E6-411A-AF08-19DE51D8F26A}' />
+    </worksheet>
+    <worksheet name='Wake up time heatmap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='prepped_data' name='federated.1r5qa1g0v1m78x16bkwcn1l16mqm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r5qa1g0v1m78x16bkwcn1l16mqm'>
+            <column-instance column='[wake_hour]' derivation='Count' name='[cnt:wake_hour:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Day Of Week' datatype='string' name='[dayOfWeek]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Friday&quot;' value='Fri' />
+                <alias key='&quot;Monday&quot;' value='Mon' />
+                <alias key='&quot;Saturday&quot;' value='Sat' />
+                <alias key='&quot;Sunday&quot;' value='Sun' />
+                <alias key='&quot;Thursday&quot;' value='Thu' />
+                <alias key='&quot;Tuesday&quot;' value='Tue' />
+                <alias key='&quot;Wednesday&quot;' value='Wed' />
+              </aliases>
+            </column>
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dayOfWeek]' derivation='None' name='[none:dayOfWeek:nk]' pivot='key' type='nominal' />
+            <column-instance column='[wake_hour]' derivation='None' name='[none:wake_hour:qk]' pivot='key' type='quantitative' />
+            <column caption='Wake Hour' datatype='real' name='[wake_hour]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:date:qk]' filter-group='4' included-values='in-range'>
+            <min>#2020-05-31#</min>
+            <max>#2020-10-06#</max>
+          </filter>
+          <slices>
+            <column>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:wake_hour:qk]' field-type='quantitative' major-origin='0.0' major-spacing='1.0' max='10.5' min='4.5' minor-origin='0.0' minor-show='false' minor-spacing='0.10000000000000001' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:wake_hour:qk]' scope='rows' value='true' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:dayOfWeek:nk]' value='190' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:dayOfWeek:nk]' value='true' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[cnt:wake_hour:qk]' num-steps='7' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d3d1df</color>
+                <color>#b7b3ce</color>
+                <color>#9d98bc</color>
+                <color>#857fab</color>
+                <color>#6f6899</color>
+                <color>#5b5487</color>
+                <color>#494176</color>
+                <color>#383164</color>
+                <color>#2a2353</color>
+                <color>#1e1842</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[cnt:wake_hour:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/square' />
+                <format attr='size' value='2' />
+                <encoding attr='density-color' palette='purple_10_0' type='interpolated' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='density-intensity' value='0.54277706146240234' />
+                <format attr='density-kernel-size' value='5.9130978584289551' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:wake_hour:qk]</rows>
+        <cols>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:dayOfWeek:nk]</cols>
+      </table>
+      <simple-id uuid='{D5451D8C-A534-43F8-BA9D-093CD79F9D70}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Waketime Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='prepped_data' name='federated.1r5qa1g0v1m78x16bkwcn1l16mqm' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1r5qa1g0v1m78x16bkwcn1l16mqm'>
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+        <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='41' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='21' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='39605' x='59595' y='1000'>
+                <zone h='98000' id='5' type-v2='layout-basic' w='39605' x='59595' y='1000'>
+                  <zone h='63374' id='12' name='Asleep by wake hour' show-title='false' w='39605' x='59595' y='35626'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='8003' id='8' name='Wake up time heatmap' param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:date:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='39605' x='59595' y='27623'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='8998' id='9' name='Wake up time heatmap' pane-specification-id='0' param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[cnt:wake_hour:qk]' type-v2='color' w='39605' x='59595' y='18625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone forceUpdate='true' h='9125' id='18' type-v2='text' w='39605' x='59595' y='1000'>
+                    <formatted-text>
+                      <run fontsize='12'>Time spent asleep</run>
+                      <run>Æ&#10;</run>
+                      <run fontsize='10'>By day and wakeup time</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='8500' id='42' name='Asleep by wake hour' pane-specification-id='0' param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' type-v2='color' w='39605' x='59595' y='10125'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='34626' id='10' name='Asleep by Day' show-title='false' w='58795' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='58374' id='3' name='Wake up time heatmap' show-title='false' w='58795' x='800' y='35626'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='5000' id='31' type-v2='text' w='58795' x='800' y='94000'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1'>Day of the Week</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='50' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='49' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='269' h='34626' id='10' is-fixed='true' name='Asleep by Day' show-title='false' w='58795' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='9125' id='18' type-v2='text' w='39605' x='59595' y='1000'>
+                  <formatted-text>
+                    <run fontsize='12'>Time spent asleep</run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='10'>By day and wakeup time</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8003' id='8' name='Wake up time heatmap' param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:date:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='39605' x='59595' y='27623'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='58374' id='3' is-fixed='true' name='Wake up time heatmap' show-title='false' w='58795' x='800' y='35626'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8998' id='9' name='Wake up time heatmap' pane-specification-id='0' param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[cnt:wake_hour:qk]' type-v2='color' w='39605' x='59595' y='18625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='63374' id='12' is-fixed='true' name='Asleep by wake hour' show-title='false' w='39605' x='59595' y='35626'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8500' id='42' name='Asleep by wake hour' pane-specification-id='0' param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' type-v2='color' w='39605' x='59595' y='10125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='5000' id='31' type-v2='text' w='58795' x='800' y='94000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1'>Day of the Week</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{95576987-574C-4608-B388-F9556BE2FAD0}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' name='Wake up time heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[cnt:wake_hour:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{37CAAB7A-77BF-43B1-84A8-78D045A7B4FA}' />
+    </window>
+    <window class='worksheet' name='Asleep by Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{09AB24DD-ACB0-46AE-B290-B1B2E2BBA953}' />
+    </window>
+    <window class='worksheet' name='Asleep by wake hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[avg:minutesAsleep:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{348B888A-778A-4B6A-BF86-4CFFE34F3BE2}' />
+    </window>
+    <window class='dashboard' name='Waketime Dashboard'>
+      <viewpoints>
+        <viewpoint name='Asleep by Day'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Asleep by wake hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Wake up time heatmap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{89F0E6AC-C6DB-40A9-BCFD-99B40DC2EAA9}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='191'>
+            <card pane-specification-id='1' param='[federated.13uahaz0cegkjf10kvibs1n3jtnl].[sum:num:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13uahaz0cegkjf10kvibs1n3jtnl].[none:level:nk]</field>
+            <field>[federated.13uahaz0cegkjf10kvibs1n3jtnl].[sum:num:ok]</field>
+            <field>[federated.13uahaz0cegkjf10kvibs1n3jtnl].[tsc:Calculation_359725057661140992:qk]</field>
+            <field>[federated.13uahaz0cegkjf10kvibs1n3jtnl].[yr:Calculation_359725057661140992:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8A2515B9-3970-4ED4-824B-62716DA6A3A7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='120'>
+            <card pane-specification-id='8' param='[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:overall_score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:dayOfWeek:nk]</field>
+            <field>[federated.1r5qa1g0v1m78x16bkwcn1l16mqm].[none:overall_score:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BA4D97B8-1818-47F4-ADAF-3433CD9B42BD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      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
+      /D/diqNN2VZ4ogAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Waketime Dashboard' width='192'>
+      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
+      dO/2R/x/KqQ90otYVxgAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
